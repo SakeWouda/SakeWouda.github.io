@@ -2,5 +2,25 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
+    width: 200px;
+    background-color: aliceblue;  
+}
+
+p {
+    color:cadetblue;
+    background-color:deepskyblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: chartreuse;
 }
