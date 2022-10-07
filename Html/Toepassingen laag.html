@@ -6,22 +6,26 @@
         <link rel="stylesheet" href="/Opmaak/opmaak.css">
     </head>
     <body>
-
-        <ul>
-            <li><a href="/Html/index.html">Home</a></li>
+        <ul class="top-level-menu">
+            <li><a href="index.html">Home</a></li>
             <li><a href="/Html/Von Neumannarchitectuur.html">Von Neumannarchitectuur</a></li>
             <li><a href="/Html/drielagenmodel.html">Drielagenmodel</a></li>
+            <li>
+                <a href="/Html/drielagenmodel.html">Drielagenmodel</a>
+                <ul class="second-level-menu">
+                    <li><a href="/Html/Fysieke laag.html">Fysieke laag</a></li>
+                    <ul class="third-level-menu">
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Book a Meeting</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                    <li><a href="/Html/Logische laag.html">Logische laag</a></li>
+                    <li><a href="/Html/Toepassingen laag.html">Toepassingen laag</a></li>
+                </ul>
+            </li>
         </ul>
-        
-        <div class="dropdown">
-            <button class="dropbtn">Drielagenmodel</button>
-            <div class="dropdown-content">
-              <a href="/Html/index.html">Fysieke laag</a>
-              <a href="/Html/Von Neumannarchitectuur.html">Logische laag</a>
-              <a href="/Html/drielagenmodel.html">Toepassingen laag</a>
-            </div>
-        </div>
-    </head>
+    </body>
     
     <footer> 
         Terms of service ---- Privacy Policy
