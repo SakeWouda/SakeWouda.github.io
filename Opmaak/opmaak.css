@@ -5,18 +5,6 @@ p {
     font-size: medium;
 }
 
-li a {
-    display: block;
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: black;
-    color: chartreuse;
-}
-
 .third-level-menu
 {
     position: absolute;
