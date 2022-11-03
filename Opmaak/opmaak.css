@@ -1,9 +1,10 @@
 /*basic kleuren die ik gebruik in mijn website*/
 :root {
-    --color-primary: #ff00d4;
-    --color-white: #e9e9e9;
-    --color-black: #1d2a3a;
-    --color-black-1: #212b38;
+    --color-green: #0ef280;
+    --color-blue: #4129a1;
+    --color-black: #000000;
+    --color-yellow: #fff200;
+    --color-white: #fff20000;    
   }
   
   * {
@@ -22,17 +23,13 @@
   
   /*De opmaak voor het logo*/
   .logo {
-    color: var(--color-white);
+    color: var(--color-green);
     font-size: 30px;
-  }
-  
-  .logo span {
-    color: var(--color-primary);
   }
   
   /*drop down menu opmaak*/
   .menu-bar {
-    background-color: var(--color-black);
+    background-color: var(--color-white);
     height: 80px;
     width: 100%;
     display: flex;
@@ -58,14 +55,14 @@
   
   .menu-bar ul li a {
     font-size: 20px;
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
   
     transition: all 0.3s;
   }
   
   .menu-bar ul li a:hover {
-    color: var(--color-primary);
+    color: var(--color-yellow);
   }
   
   .fas {
