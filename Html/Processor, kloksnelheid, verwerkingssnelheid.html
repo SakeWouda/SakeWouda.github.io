@@ -1,74 +1,46 @@
 <!DOCTYPE html> 
-<html> 
+<html> <!--dit is het html-element-->
+    <head>
+        <title>het tweede begin</title> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/Opmaak/opmaak.css">
+    </head>  
+    <body>
+        <div class="menu-bar">
+            <h3 class="logo">Computer<span>Uitgelegd</span></h3>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/Html/drielagenmodel.html">Drielagenmodel <i class="fas fa-caret-down"></i></a>
+        
+                  <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="/Html/Fysieke laag.html">Fysieke laag <i class="fas fa-caret-right"></i></a>
+                          
+                            <div class="dropdown-menu-1">
+                              <ul>
+                                <li><a href="/Html/Moederbord, bus.html">Moederbord en bus</a></li>
+                                <li><a href="/Html/Processor, kloksnelheid, verwerkingssnelheid.html">Processor en kloksnelheid</a></li>
+                                <li><a href="/Html/RAM, ROM, Permanent.html">RAM, ROM en permanent</a></li>
+                                <li><a href="/Html/Randapparatuur.html">Randapparatuur</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        <li><a href="/Html/Logische laag.html">Logische laag<i class="fas fa-caret-right"></i></a>
+                        </li>    
+                        <li><a href="/Html/Toepassingen laag.html">Toepassingen laag<i class="fas fa-caret-right"></i></a> 
+                        </li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="/Html/Von Neumannarchitectuur.html">Von Neumannarchitectuur</a>
+              </li>
+            </ul>
+          </div>
+    </body>
+    <footer> 
+        Terms of service ---- Privacy Policy
 
-  <!--De pagina een titel geven en links toevoegen zodat de opmaak klopt-->
-<head>
-    <title>Processor en kloksnelheid</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
-    <link rel="stylesheet" href="opmaak.css">
-</head>
+        © 2022 Sake Wouda
 
-<!--dropdown menu als horizontale 'bar'-->
-<body>
-    <div class="menu-bar">
-        <h3 class="logo">Computer<span>Uitgelegd</span></h3>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/Html/drielagenmodel.html">Drielagenmodel <i class="fas fa-caret-down"></i></a>
-    
-              <div class="dropdown-menu">
-                  <ul>
-                    <li><a href="fysiekelaag.html">Fysieke laag <i class="fas fa-caret-right"></i></a>
-                      
-                        <div class="dropdown-menu-1">
-                          <ul>
-                            <li><a href="/Html/Moederbord, bus.html">Moederbord en bus</a></li>
-                            <li><a href="/Html/Processor, kloksnelheid, verwerkingssnelheid.html">Processor en kloksnelheid</a></li>
-                            <li><a href="/Html/RAM, ROM, Permanent.html">RAM, ROM en permanent</a></li>
-                            <li><a href="/Html/Randapparatuur.html">Randapparatuur</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                    <li><a href="/Html/Logische laag.html">Logische laag<i class="fas fa-caret-right"></i></a>
-                    </li>    
-                    <li><a href="/Html/Toepassingen laag.html">Toepassingen laag<i class="fas fa-caret-right"></i></a> 
-                    </li>
-                  </ul>
-                </div>
-          </li>
-          <li><a href="/Html/Von Neumannarchitectuur.html">Von Neumannarchitectuur</a>
-          </li>
-        </ul>
-      </div>
-
-<!--De tekst voor deze pagina-->
-<div class="box">
-  <h1>Processor en kloksnelheid</h1>
-
-  <h2>CPU:</h2>
-  <p>De CPU bestuurt het hele systeem van je apparaat. Hij bestaat uit ontzettend veel transistors, die samen de logische schakelingen vormen. De CPU bestaat uit twee onderdelen: het besturingsorgaan en het rekenorgaan.</p>
-  <img src="Inf. CPU.PNG" alt="CPU" width="auto" height="200">
-  <p>De meeste apparaten hebben één processor, maar er zijn ook grote computers met meerdere processoren. Dit zijn multiprocessor systemen. </p>
-  <p>De processor is vrijwel altijd een multicore processor. Dit houdt in dat de processor uit meerdere kernen bestaat, die apart van elkaar instructies kunnen verwerken. Hierdoor kan een computer meerdere taken tegelijk uitvoeren, en dus ook sneller. De naam van de processor toont meestal ook aan hoeveel cores ze hebben. Zo staar dualcore voor twee kernen en hexacore voor zes kernen.</p>
-  <p>De CPU is verantwoordelijk voor de besturing en het uitvoeren van de berekeningen. Zijn taken zijn onder andere:</p>
-  <p> - Het ophalen van instructies en gegevens uit het RAM</p>
-  <p> - Het laten uitvoeren van berekeningen door het rekenorgaan</p>
-  <p> - Het opslaan van resultaten in het computergeheugen</p>
-  <p> - Het regelen van de uitvoer van gegevens</p>
-  <p>De verwerkingssnelheid geeft de snelheid van de CPU aan: de hoeveelheid instructies die de CPU in één seconde kan verwerken. Deze snelheid wordt uitgedrukt in mips (millions of instructions per second).</p>
-  <p>Zou je nog meer willen weten over de werking van de CPU? Bekijk dan <a href="https://www.youtube.com/watch?v=cNN_tTXABUA">Hier</a> het filmpje.</p>
-
-  <h2>Kloksnelheid:</h2>
-  <p>De kloksnelheid hangt af van de klokchip, die een vast aantal malen per seconde (Hz) een puls aan de CPU geeft om de verwerkingsstappen synchroon te laten lopen.</p>
-  <p>De verwerkingssnelheid ligt altijd lager dan de kloksnelheid, omdat er voor het uitvoeren van iedere instructie meerdere pulsen nodig zijn van de klokchip.</p>
-</div>
-
-<!--footer voor deze pagina-->
-<div class="footer">
-  <p1>Gemaakt door Rabia van Vliet</p1>
-</div>
-
-</body>
+    </footer>
 </html>

@@ -1,33 +1,43 @@
-<!DOCTYPE html> <!--dit is de homepage van mijn site-->
+</div>
+<!DOCTYPE html> 
 <html> <!--dit is het html-element-->
     <head>
-        <title>het derde begin</title> 
+        <title>het tweede begin</title> 
         <meta charset="utf-8">
         <link rel="stylesheet" href="/Opmaak/opmaak.css">
-    </head>
+    </head>  
     <body>
-        <ul class="top-level-menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/Html/Von Neumannarchitectuur.html">Von Neumannarchitectuur</a></li>
-            <li><a href="/Html/drielagenmodel.html">Drielagenmodel</a></li>
-            <li>
-                <a href="/Html/drielagenmodel.html">Drielagenmodel</a>
-                <ul class="second-level-menu">
-                    <li><a href="/Html/Fysieke laag.html">Fysieke laag</a></li>
-                    <ul class="third-level-menu">
-                        <li><a href="/Html/Specifiek onderwerp.html">Specifiek onderwerp</a></li>
-                        <li><a href="/Html/Moederbord, bus.html">Moederbord, bus</a></li>
-                        <li><a href="/Html/Processor, kloksnelheid, verwerkingssnelheid.html">Processor, kloksnelheid, verwerkingssnelheid</a></li>
-                        <li><a href="/Html/RAM, ROM, Permanent.html">Geheugen: RAM, ROM, Permanent</a></li>
-                        <li><a href="/Html/Randapparatuur.html">Randapparatuurt</a></li>
-                    </ul>
-                    <li><a href="/Html/Logische laag.html">Logische laag</a></li>
-                    <li><a href="/Html/Toepassingen laag.html">Toepassingen laag</a></li>
-                </ul>
-            </li>
-        </ul>
+        <div class="menu-bar">
+            <h3 class="logo">Computer<span>Uitgelegd</span></h3>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/Html/drielagenmodel.html">Drielagenmodel <i class="fas fa-caret-down"></i></a>
+        
+                  <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="/Html/Fysieke laag.html">Fysieke laag <i class="fas fa-caret-right"></i></a>
+                          
+                            <div class="dropdown-menu-1">
+                              <ul>
+                                <li><a href="/Html/Moederbord, bus.html">Moederbord en bus</a></li>
+                                <li><a href="/Html/Processor, kloksnelheid, verwerkingssnelheid.html">Processor en kloksnelheid</a></li>
+                                <li><a href="/Html/RAM, ROM, Permanent.html">RAM, ROM en permanent</a></li>
+                                <li><a href="/Html/Randapparatuur.html">Randapparatuur</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        <li><a href="/Html/Logische laag.html">Logische laag<i class="fas fa-caret-right"></i></a>
+                        </li>    
+                        <li><a href="/Html/Toepassingen laag.html">Toepassingen laag<i class="fas fa-caret-right"></i></a> 
+                        </li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="/Html/Von Neumannarchitectuur.html">Von Neumannarchitectuur</a>
+              </li>
+            </ul>
+          </div>
     </body>
-    
     <footer> 
         Terms of service ---- Privacy Policy
 
