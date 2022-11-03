@@ -55,7 +55,7 @@
   
   .menu-bar ul li a {
     font-size: 20px;
-    color: var(--color-black);
+    color: var(--color-white);
     text-decoration: none;
   
     transition: all 0.3s;
