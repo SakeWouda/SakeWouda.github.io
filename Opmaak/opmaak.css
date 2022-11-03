@@ -1,4 +1,4 @@
-/*basic kleuren die ik gebruik in mijn website*/
+/*De kleuren van mijn website*/
 :root {
     --color-green: #0ef280;
     --color-blue: #29a19f;
@@ -14,7 +14,7 @@
     box-sizing: border-box;
   }
   
-  /*achtergrondafbeelding instellen*/
+  /*achtergrondafbeelding*/
   body {
     font-family: sans-serif;
     background-position: left top;
@@ -22,14 +22,7 @@
     background-attachment: fixed;
   }
   
-  /*De opmaak voor het logo*/
-  .logo {
-    color: var(--color-green);
-    font-size: 30px;
-    width: 100%;
-  }
-  
-  /*drop down menu opmaak*/
+  /*drop down menu*/
   .menu-bar {
     background-color: var(--color-yellow);
     height: 80px;
@@ -50,7 +43,7 @@
   .menu-bar ul li {
     /* width: 120px; */
     padding: 10px 30px;
-    /* text-align: center; */
+    /* Text in het midden */
   
     position: relative;
   }
@@ -73,7 +66,7 @@
     padding-top: 3px;
   }
   
-  /* dropdown menu opmaak bij hoveren */
+  /* Hoveren bij het menu */
   .dropdown-menu {
     display: none;
   }
@@ -154,6 +147,13 @@
     color:var(--color-white)
   }
   
+    /*Het logo*/
+    .logo {
+      color: var(--color-green);
+      font-size: 30px;
+      width: 100%;
+    }
+    
   /*De opmaak voor de interne links, die niet bij het dropdown menu horen*/
   .box a:link, a:visited {
     background-color: var(--color-black);
