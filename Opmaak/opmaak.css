@@ -1,169 +1,169 @@
 /*De kleuren van mijn website*/
 :root {
-    --color-green: #0ef280;
-    --color-blue: #29a19f;
-    --color-black: #000000;
-    --color-yellow: #fff200;
-    --color-white: #fff20000;   
-    --color-red: #ff4800; 
-  }
+  --color-green: #0ef280;
+  --color-blue: #29a19f;
+  --color-black: #000000;
+  --color-yellow: #fff200;
+  --color-white: #fff20000;   
+  --color-red: #ff4800; 
+}
   
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*achtergrondafbeelding*/
+body {
+  font-family: sans-serif;
+  background-position: left top;
+  background-image: url("/Afbeeldingen/achtergrond.jpg");
+  background-attachment: fixed;
+}
   
-  /*achtergrondafbeelding*/
-  body {
-    font-family: sans-serif;
-    background-position: left top;
-    background-image: url("/Afbeeldingen/achtergrond.jpg");
-    background-attachment: fixed;
-  }
+/*drop down menu*/
+.menu-bar {
+  background-color: var(--color-yellow);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+ 
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
   
-  /*drop down menu*/
-  .menu-bar {
-    background-color: var(--color-yellow);
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* Text in het midden */
+
+  position: relative;
+}
   
-    position: relative;
-  }
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-black);
+  text-decoration: none;
+
+  transition: all 0.1s;
+}
+ 
+.menu-bar ul li a:hover {
+  color: var(--color-green);
+}
+ 
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
   
-  .menu-bar ul {
-    list-style: none;
-    display: flex;
-  }
+/* Hoveren bij het menu */
+.dropdown-menu {
+  display: none;
+}
   
-  .menu-bar ul li {
-    /* width: 120px; */
-    padding: 10px 30px;
-    /* Text in het midden */
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-blue);
+}
   
-    position: relative;
-  }
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
   
-  .menu-bar ul li a {
-    font-size: 20px;
-    color: var(--color-black);
-    text-decoration: none;
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
   
-    transition: all 0.1s;
-  }
+.dropdown-menu-1 {
+  display: none;
+}
   
-  .menu-bar ul li a:hover {
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-red);
+}
+  
+/*Standaard tekst*/
+p {
+  margin: 15px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  display: block;
+  color: var(--color-black);
+  text-indent: 15px;
+}
+/* Zodat de tekst zichtbaar is op de achtergrond, een witte vak om de tekst heen */
+.box {
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px 200px;
+}
+  
+/*Headers*/
+h1 {
+  text-transform: uppercase;
+  margin: 15px;
+  color: var(--color-black);
+  text-decoration-color: var(--color-black);
+}
+  
+h2 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5%;
+  text-decoration-color: var(--color-green);
+  color: var(--color-black);
+  margin: 15px;
+}
+  
+/*Footer*/
+.footer {
+  padding: 15px;
+  text-align: center;
+  background:var(--color-black);
+  margin-top: 20px;
+}
+  
+p1 {
+  color:var(--color-white)
+}
+  
+  /*Het logo*/
+  .logo {
     color: var(--color-green);
-  }
-  
-  .fas {
-    float: right;
-    margin-left: 10px;
-    padding-top: 3px;
-  }
-  
-  /* Hoveren bij het menu */
-  .dropdown-menu {
-    display: none;
-  }
-  
-  .menu-bar ul li:hover .dropdown-menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: var(--color-blue);
-  }
-  
-  .menu-bar ul li:hover .dropdown-menu ul {
-    display: block;
-    margin: 10px;
-  }
-  
-  .menu-bar ul li:hover .dropdown-menu ul li {
-    width: 150px;
-    padding: 10px;
-  }
-  
-  .dropdown-menu-1 {
-    display: none;
-  }
-  
-  .dropdown-menu ul li:hover .dropdown-menu-1 {
-    display: block;
-    position: absolute;
-    left: 150px;
-    top: 0;
-    background-color: var(--color-red);
-  }
-  
-  /*Standaard tekst*/
-  p {
-    margin: 15px;
-    font-family: "Times New Roman", Times, serif;
-    line-height: 1.5;
-    display: block;
-    color: var(--color-black);
-    text-indent: 15px;
-  }
-  /* Zodat de tekst zichtbaar is op de achtergrond, een witte vak om de tekst heen */
-  .box {
-    background-color: white;
-    border: 5px solid white;
-    border-radius: 10px;
-    padding: 50px;
-    margin: 50px 200px;
-  }
-  
-  /*Headers*/
-  h1 {
-    text-transform: uppercase;
-    margin: 15px;
-    color: var(--color-black);
-    text-decoration-color: var(--color-black);
-  }
-  
-  h2 {
-    text-decoration-line: underline;
-    text-decoration-thickness: 5%;
-    text-decoration-color: var(--color-green);
-    color: var(--color-black);
-    margin: 15px;
-  }
-  
-  /*Footer*/
-  .footer {
-    padding: 15px;
-    text-align: center;
-    background:var(--color-black);
-    margin-top: 20px;
-  }
-  
-  p1 {
-    color:var(--color-white)
-  }
-  
-    /*Het logo*/
-    .logo {
-      color: var(--color-green);
-      font-size: 30px;
-  }
+    font-size: 30px;
+}
     
-  /*De opmaak voor de interne links, die niet bij het dropdown menu horen*/
-  .box a:link, a:visited {
-    background-color: var(--color-black);
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
+/*De opmaak voor de interne links, die niet bij het dropdown menu horen*/
+.box a:link, a:visited {
+  background-color: var(--color-black);
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
   
-  .box a:hover, a:active {
-    background-color: var(--color-white);
-    color: var(--color-black)
-  }
+.box a:hover, a:active {
+  background-color: var(--color-white);
+  color: var(--color-black)
+}
