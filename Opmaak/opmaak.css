@@ -145,7 +145,7 @@ h2 {
   clear: both;
 }
   
-.footer p{
+#footer p{
   color:var(--color-white)
 }
   
