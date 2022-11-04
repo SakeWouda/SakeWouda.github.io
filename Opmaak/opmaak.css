@@ -40,7 +40,7 @@ body {
   justify-content: space-between;
   /*Alles gelijk verdeelt over de menu-bar*/
   align-items: center;
-  /*Er zit 5% tussen*/
+  /*Er zit 5% tussen de tekst en de menu-bar*/
   padding: 0 5%;
   /*Relatie aan de rest van de tekst*/
   position: relative;
@@ -86,9 +86,13 @@ body {
 }
   
 .menu-bar ul li:hover .dropdown-menu {
+  /*Het menu wordt in blokken weergegeven*/
   display: block;
+  /*De plek verander niet als er andere tekst is.*/
   position: absolute;
+  /*Het menu komt links te staan*/
   left: 0;
+  /*Het menu staat helemaal bovenaan de website*/
   top: 100%;
   background-color: var(--color-blue);
 }
@@ -100,10 +104,12 @@ body {
   
 .menu-bar ul li:hover .dropdown-menu ul li {
   width: 150px;
+  /*bepaald hoeveel ruimte er zit tussen de test en het vak er omheen*/
   padding: 10px;
 }
   
 .dropdown-menu-1 {
+  /*Het wordt gerendered alsof de rest van de pagina niet bestaat */
   display: none;
 }
   
@@ -117,17 +123,23 @@ body {
   
 /*Standaard tekst*/
 p {
+  /*Hoe groot de letters zijn*/
   margin: 15px;
+  /*Het standaard lettertype op de website*/
   font-family: "Times New Roman", Times, serif;
+  /*Hoe hoog de lijnen zijn waarin de test staat*/
   line-height: 1.5;
   display: block;
   color: var(--color-black);
+  /*Het inspringen van tekst bij een nieuwe alinea*/
   text-indent: 15px;
 }
 /* Zodat de tekst zichtbaar is op de achtergrond, een witte vak om de tekst heen */
 .box {
   background-color: white;
+  /*Hoe de rand van het vak er uit ziet */
   border: 5px solid white;
+  /*Maakt een ronding van het tekst vak bij de hoeken*/
   border-radius: 10px;
   padding: 50px;
   margin: 50px 200px;
@@ -135,6 +147,7 @@ p {
   
 /*Headers*/
 h1 {
+  /*Maakt hoofdletter van de tekst bij h1*/
   text-transform: uppercase;
   margin: 15px;
   color: var(--color-black);
@@ -142,7 +155,9 @@ h1 {
 }
   
 h2 {
+  /*Er komt een lijn onder tekst dat h2 is*/
   text-decoration-line: underline;
+  /*De dikte van de lijn is 5% van de letter*/
   text-decoration-thickness: 5%;
   text-decoration-color: var(--color-green);
   color: var(--color-black);
@@ -156,9 +171,10 @@ h2 {
   background:var(--color-black);
   margin-top: 20px;
   position: relative;
+  /*Het staat vrij van de rest van je tekst*/
   clear: both;
 }
-  
+  /*Tekst bij de footer is wit*/
 #footer p{
   color:white
 }
@@ -176,6 +192,7 @@ h2 {
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
+  /*een Blok wat in de tekst komt te staan en zich aanpast aan de tekst*/
   display: inline-block;
 }
   
