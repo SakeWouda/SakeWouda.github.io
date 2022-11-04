@@ -149,10 +149,10 @@ h2 {
   color:white
 }
   
-  /*Het logo*/
-  .logo {
-    color: var(--color-green);
-    font-size: 30px;
+/*Het logo*/
+.logo {
+  color: var(--color-green);
+  font-size: 30px;
 }
     
 /*De opmaak voor de interne links, die niet bij het dropdown menu horen*/
