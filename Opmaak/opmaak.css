@@ -7,35 +7,47 @@
   --color-white: #ffffff00;   
   --color-red: #ff4800; 
 }
-  
+/**/  
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*achtergrondafbeelding*/
+/*achtergrondafbeelding */
 body {
+  /*De manier waarop iets wordt weergegeven op je site. sans-serif zorgt voor een simpele maar moderne look*/
   font-family: sans-serif;
+  /*Hij start linksboven.*/
   background-position: left top;
+  /*De afbeelding die verschijnt op de achtergrond.*/
   background-image: url("/Afbeeldingen/achtergrond.jpg");
+  /*Hij is vast op de achtergrond. Dus er kan niks achter en de afbeelding verplaatst niet als er tekst komt.*/
   background-attachment: fixed;
 }
   
 /*drop down menu*/
 .menu-bar {
+  /*Dit bepaalt de achtergrond kleur*/
   background-color: var(--color-yellow);
+  /*Bepaald hoe hoog de menu bar is. In dit geval 80 pixels*/
   height: 80px;
+  /*De breedte is 100% van de pagina*/
   width: 100%;
+  /*De tekst past zich aan aan het menu, zodat het genoeg ruimte heeft*/
   display: flex;
+  /*De tekst is gelijk verdeeld*/
   justify-content: space-between;
+  /*Alles gelijk verdeelt over de menu-bar*/
   align-items: center;
+  /*Er zit 5% tussen*/
   padding: 0 5%;
-
+  /*Relatie aan de rest van de tekst*/
   position: relative;
 }
  
 .menu-bar ul {
+  /*Er staan geen tekens voor de lijst*/
   list-style: none;
   display: flex;
 }
@@ -51,8 +63,9 @@ body {
 .menu-bar ul li a {
   font-size: 20px;
   color: var(--color-black);
+  /*De text is niet opgemaakt*/
   text-decoration: none;
-
+  /*Hoelang het duurt voordat de tekst is ingekleurd*/
   transition: all 0.1s;
 }
  
@@ -61,6 +74,7 @@ body {
 }
  
 .fas {
+  /*Hij is rechts gepositioneerd*/
   float: right;
   margin-left: 10px;
   padding-top: 3px;
