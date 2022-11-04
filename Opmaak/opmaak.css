@@ -145,7 +145,7 @@ h2 {
   position: relative;
 }
   
-p1 {
+.footer p{
   color:var(--color-white)
 }
   
