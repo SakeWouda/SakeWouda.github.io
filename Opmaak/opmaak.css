@@ -142,6 +142,7 @@ h2 {
   background:var(--color-black);
   margin-top: 20px;
   position: relative;
+  clear: both;
 }
   
 .footer p{
